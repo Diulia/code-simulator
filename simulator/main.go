@@ -1,10 +1,9 @@
-
 package main
 
 import (
 	"fmt"
-	kafka2 "github.com/codeedu/imersaofsfc2-simulator/application/kafka"
-	"github.com/codeedu/imersaofsfc2-simulator/infra/kafka"
+	kafka2 "github.com/Diulia/code-simulator/application/kafka"
+	"github.com/Diulia/code-simulator/infra/kafka"
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/joho/godotenv"
 	"log"
@@ -13,7 +12,7 @@ import (
 func init() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("error loading .env file ---- tá rodando mas ainda tá com erro")
+		log.Fatal("error loading .env file")
 	}
 }
 
